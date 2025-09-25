@@ -30,6 +30,7 @@ def peerinfo():
         return jsonify({'message': 'User not found'}), 404
     return jsonify({'address': result.decode('utf-8')}), 200
 
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8001, debug=False)
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=9090, debug=False)
+
 
